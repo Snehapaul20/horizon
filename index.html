@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Basic website for a tech event with Tailwind CSS and JavaScript.">
+    <meta name="keywords" content="tech event, tailwind css, responsive design, web development">
+    <meta name="author" content="Your Name">
+    <title>Horizon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="font-bold text-xl">Horizon</a>
+            <div class="hidden md:block">
+                <a href="#landing" class="mx-2">Home</a>
+                <a href="#about" class="mx-2">About Us</a>
+                <a href="#cards" class="mx-2">Cards</a>
+                <a href="#footer" class="mx-2">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#landing" class="block px-4 py-2">Home</a>
+            <a href="#about" class="block px-4 py-2">About Us</a>
+            <a href="#cards" class="block px-4 py-2">Cards</a>
+            <a href="#footer" class="block px-4 py-2">Contact</a>
+        </div>
+    </nav>
+    <section id="landing" class="h-screen bg-cover bg-center flex items-center justify-center text-white landing-background">
+        <h1 class="text-5xl font-bold  text-black">Horizon</h1>
+    </section>
+    <section id="about" class="container mx-auto my-12 p-8 bg-white rounded-lg shadow">
+        <h2 class="text-3xl font-bold mb-4 text-center">About Us</h2>
+        <p>Indian Society for Technical Education (ISTE) is a national, non-profit making society registered under the Societies Registration Act of 1860. Our aim is to equip engineers of today with the technical and management skills to solve the challenges of tomorrow by learning and being a part of departments such as technical , electrical, management and design. We also organize a plethora of events and hands on workshops aimed at making better professionals, bringing about holistic development of our community.</p>
+    </section>
+
+    <!-- Cards -->
+    <section id="cards" class="container mx-auto my-12 p-8">
+        <h2 class="text-3xl font-bold mb-4 text-center">Cards</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-2">Card 1</h3>
+                
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-2">Cards 2</h3>
+                
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+                <h3 class="text-xl font-bold mb-2">Card 3</h3>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>iste</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
